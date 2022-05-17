@@ -1,0 +1,9 @@
+<Route exec path="/Business" element={<News pageSize={5} country="in" category="sports"/>}/>
+<Route exec path="/Entertainment" element={<News pageSize={5} country="in" category="sports"/>}/>
+<Route exec path="/General" element={<News pageSize={5} country="in" category="sports"/>}/>
+<Route exec path="/Health" element={<News pageSize={5} country="in" category="sports"/>}/>
+<Route exec path="/Science" element={<News pageSize={5} country="in" category="sports"/>}/>
+<Route exec path="/Sports" element={<News pageSize={5} country="in" category="sports"/>}/>
+<Route exec path="/Technology" element={<News pageSize={5} country="in" category="sports"/>}/>
+
+          <Route exec path="/business" element={<News pageSize={5} country="in" category="sports"/>}/>
