@@ -8,7 +8,6 @@ const News =(props)=> {
     const [loading, setloading] = useState(true);
     const [page, setpage] = useState(1);
     const [totalResults, settotalResults] = useState(0);
-    // document.title=`${this.capitalizeFirstLetter(props.category)}- NewsBank`;
 
    const  capitalizeFirstLetter=(string)=> {
       return string.charAt(0).toUpperCase() + string.slice(1);
@@ -25,7 +24,9 @@ const News =(props)=> {
       setloading(false)
     }
      useEffect(()=>{
+        // document.title=`${this.capitalizeFirstLetter(props.category)}- NewsBank`;
         updateNews();
+        //eslint-disable-next-line
      },[])
     const handlePrevClick =async()=>{
         setpage(page-1)
@@ -38,7 +39,7 @@ const News =(props)=> {
   
     return (
       <div className='container my-3'>
-        <h1 className="text-center">Newsbank - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
+        <h1 className="text-center" style={{marginTop:'90px'}}>Newsbank - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
         {/* if loading = true then only show spinner */}
           {loading && <Spinner />} 
           <div className="row">
