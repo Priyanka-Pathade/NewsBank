@@ -1,15 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
-  
-  render() {
-      // let myStyle={
+const NewsItem =(props)=> {
+        // let myStyle={
       //   width: "18rem"
       // }
-      let {title, description,imageUrl,newsUrl,author, date} = this.props;
+      let {title, description,imageUrl,newsUrl,author, date} = props;
     return (
       <div className='my-3'>
-        <div className="card" style={{width: "18rem"}}>
+        <div className="card" >   {/*style={{width: "18rem"}}*/}
         <img src={!imageUrl?"https://static-ai.asianetnews.com/images/d59a1226-5899-4ab0-8c3c-ca5de1605576/image_1200x630xt.jpg":imageUrl} 
         className="card-img-top" alt="..."/>
         <div className="card-body">
@@ -22,6 +20,5 @@ export class NewsItem extends Component {
     </div>
     )
   }
-}
 
 export default NewsItem
